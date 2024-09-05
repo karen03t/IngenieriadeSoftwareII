@@ -10,7 +10,7 @@ package taller4;
  */
 public class Factura {
     
-    public double calcularImpuesto(Calculo calculo){
+    public double TotalDeImpuesto(Calculo calculo){
         return calculo.calcularImpuesto();
         
     }
