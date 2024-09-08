@@ -8,6 +8,7 @@ package taller7paquete;
  *
  * @author karen
  */
-public interface IPaquetePequeño {
-    void  CalcularCostoEnvioPequeño(double dimenciones , double valorDeclarado);
+public interface IPaquetePeligroso {
+    void calcularCostoPaquetePeligroso(double peso, boolean etiquetaPeligro, boolean embalajeEspecial);
+
 }

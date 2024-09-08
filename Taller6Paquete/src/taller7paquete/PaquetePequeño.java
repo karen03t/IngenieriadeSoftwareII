@@ -20,10 +20,9 @@ public class PaquetePequeño extends PesoPaquete implements IPaquetePequeño{
     }
 
      @Override
-    public void CalcularCostoEnvioPequeño(double peso, double dimension, double valorDeclarado) {
-        double envioTotal;
-        envioTotal = (peso*this.dimension)+this.valorDeclarado;
- 
+    public void CalcularCostoEnvioPequeño(double dimenciones, double valorDeclarado) {
+      double envioTotal = (getPeso() * dimension) + valorDeclarado;
+        System.out.println("El costo de envío del paquete pequeño es: $" + envioTotal);
     }
 
     /**
@@ -34,7 +33,7 @@ public class PaquetePequeño extends PesoPaquete implements IPaquetePequeño{
     }
 
     /**
-     * @param dimensiones the dimensiones to set
+     * @param dimension
      */
     public void setDimension(double dimension) {
         this.dimension = dimension;
@@ -53,6 +52,10 @@ public class PaquetePequeño extends PesoPaquete implements IPaquetePequeño{
     public void setValorDeclarado(double valorDeclarado) {
         this.valorDeclarado = valorDeclarado;
     }
+
+   
+
+   
 
    
     
