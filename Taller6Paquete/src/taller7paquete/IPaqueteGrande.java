@@ -9,5 +9,6 @@ package taller7paquete;
  * @author karen
  */
 public interface IPaqueteGrande {
-    void calcularCostoPaqueteGrande(double peso, double volumen);
+    void calcularCostoPaqueteGrande(double dimensiones , double volumen,String medioTransporte);
+    
 }
