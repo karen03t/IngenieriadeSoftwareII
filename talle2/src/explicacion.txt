@@ -1,0 +1,10 @@
+°La principal violacion notable en la clase Factura es en contra del principio de resposabilidad unica, el cual dice que una clase debe tener solo una responsabilidad en otras palabras un solo metodo ya que se nos pide que esta clase debe tener metodos para: 
+-guardar facturas
+-enviar facturas al email
+-generar un reporte de las facturas por mes 
+- enviar la factura a la DIAN 
+es evidente que esta clase cuenta con 4 metodos cuando iria en contra al SRP 
+
+
+° despues de refactorizado el codigo realice las siguientes clases: Cliente, envioCorreoDIAN, EnvioDeCorreo, Factura y reporteFactura, 
+donde Cliente solo se encarga de guardar su propia informacion, envioCorreoDIAN toma la informacion tanto de Factura y Cliente y le envia un reporte con estos datos, en Envio de Correo toma la informacion suministrada por la Factura y se la envia al Cliente, Factura se encarga de guardar la informacion suministada sobre la factura, y en reporte de Factura se encarga de recopilar las facturas generadas en un mes y almacenarlas en una lista para despues ser mostradas 
