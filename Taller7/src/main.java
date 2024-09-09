@@ -9,6 +9,7 @@
  */
 public class main {
 
+
     public static void main(String[] args) {
         // Crear una orden
         Orden orden = new Orden("Manizales", "Bogotá", "02/09/2024", "Karen Orrego");
